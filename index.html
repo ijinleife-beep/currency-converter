@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        
+         body {
+            background: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUWFRcVFRUVFRcVFRUPFRUXFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHSUtMC0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy0tLS03Nzc3Lf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADsQAAEDAgMGAwcDAwIHAAAAAAEAAhEDIQQSMQUiQVFxgWGxwQYTMpGh0fAUQnIjguFSshUzU2OSs/H/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAlEQACAgICAgICAwEAAAAAAAAAAQIRAyEiMQQSE0Fh8BQykSP/2gAMAwEAAhEDEQA/APiiKmgR010rsm+gnJIWl1O0rOAjNNNAiy1FcKwEKCCVSMhUAg0ayAIYTYQQi0ayQrcEcK3tTeuhbAYFMtimMb+dlC2xR9dGvYtoQEJ7B5ICLoOOjJgsCFwT6Q1QPF0HHSNexYCYG2VQmtFkYxM2Iyo8tkbG3PRXFkVADYjKic1FCN7VlHQbM7goAjcFGhJWw3oAhUExwQtCFbNZSiOEMJqCCUVNUQjpBBLZn0RyWmuS0ZAiVKiiiUYsKwqVhFAY9r7JUJjRZAAqSbdCLRMqkK1YCFGsEhU0I3CyFoug1sN6ChLhPhLhNJATDhFUbfsFcJlUX7BVUdCN7F023+fkhc2ydRbc9D5KPpbso+mge2wKbfJLLbrTSb5JRp8VpQ0jKWyqLdfzkgeL/nJPw7bHp6hLqC/5yQceKCnsVCc1tvkgAWhjbfJaEdmkxNNtz0+yvLY9UdNtz0+yuN09Uyjr/QNmeEdRt1cI6wv2CCjoN7MrwowIqgUYFGtj3oF4QtR1AhYEGtm+i4VQmZEKzRrFuCukFCE/C0pmVoxblozdIW8JJT6sCQkrTWwxBUVqlMcJWFSIBEVjRohATALIAFVroRETaDdUACfh26p8a5CyeiqtOxss7Bdbqrd0rIxt02WNSQIPQWVLATDxRClaUtX0G6Ly+CZVbfTgPJWGptdlx0HkrqOiTexVFtzbgfJMLf6Ztx+yLDMubcD5LaMKW07wZm1rRCvjxtx/0nOdM5mFGvRTLY24FaaGHgEoCyx6FT9Go7H9ticM2xtw9Qk1W3WvCMs7p6hJqtv+ckklwQyfJiQLLSxu6eyUG2K1NZuHoFsaNJmOjM9QnBu6bcR6o8BQDnXTCzdPUeqaEeNiylujJl0RVm37BFk0TK7b9h5IKOmG9mGo1UwJ1RklABC52qZW9C6gRYdtzZR5lMwrbnotHc0ZuohObbRZVueLFY4T5lsEGCVdNSFdMKS7HfQp+qApj9UBU2MilFFEoxYRtCgCMNWsAxosha1PYzdVNYrN9EwA1aMKzVRtNa8JS1T4nyQk+hVZm6VkpsIOi7NSjunosLaKOeVSQMfQFSnJJhQMsujTw8/MequrgiGE8IKdb2Lf0c6Lp1S5HbyRUsPKbi8NDh0Hkip8TNbL2W0CpfSHctcphdDHYYmkIMfF6JWzMGXuyjUh2vgyVuODrtaARu31IIi0+K7MU+DVHLkXO7OHQouEh3IwlvbY9PNei/TgU3z4R1kekrDWwgyTpuz1NkjjUR1PZy8HTs7p6hJrMue3kungqNndPUKYnCiewP0Ck1cEOpVJnJyLYynuHoEx2HEnt9VsdQhrujfILQVWGUujmbP3XT2+qYadnfyHqnYSjvfLzWk0N138h6owlxBL+xycmn5wTMRTv2Hkt78FDQZ7dlMRQv2Hkh0gp2zkFiS6ncrp1MObwOXmkNwh+qhJ2VRgc1NwjbnoirUiCt2zsE5xMDhz8UmJ3kSQZ6iZqjLHosGVd7E4B7WkkWA5rkFit5CpqxMTtGYtV02phYrpjVc8eyr6M1QXSnLRUFykuCnJ7HQuFFaiQYa1qcxqpjVoY1JZmNpst2R0qB5H5LTgYkd/Irr4SmJ7FUlLomcZlFb8Fh9UeJaGvJI5eS6ewWsc8B3wzfp2ulx5eaBJcRR2c8sLsrssHegxHOeSxMwHiPr9l9G25gBlfAdOUZYz5clp0GWIlcChs7wUfM8lRmjYY2jj0sDEcd4aTwn7roU9ivq0nkQA0XJ8ZjyXsML7IuIaS5omDFyuvR9nSzD127jy5ohrpDTE6/NNj8viwSxO9HyGtseox2Vwi0g8C2dRCuts8hwm4geS+g7c2W2acAZwzI9rSSxsRAb9V5v9JUfUAIMDw8DxVYeQtfkVpnGwFcseXMEGCOerfFdmliszYqQLGCATdacN7OOklrXOjWBacuivE7LewNL2EXOvNdkM9EZwT2c3B7zHl53mgtb4Z+Qjw18VnrYaaZA/6Z9F2amFu635CIYYZb23DfloqLJqiMu7PKbM2fUeHkcLG/i37rdidk1GtzOiMrePOF6rYuDaadSDO+4Tl8KZWna+EHuXAcGs4Rxam9ko0b5LmeA/TXd/atdXDWd0b5BdEYS7v7V1G4YgCJ+Eac7/AGCn8nZWSPIUsIQJ6R81o2fhHl0wYnWDGjuK9bRwIeWCppLNSfG0weQ/xqn7UwFRnvMpIIcIbmOXJf8AbkyxpxUvlUUPtmV2zs1ASAe3DKvK4jCX7DyXszVrikGkjs0aRHJKobGNQgRc2A04eKlPyrdAx4vVWeXwGw6lXMWjgLnQmRb6rl4nZ72ktILSCZB1X1rBezLxQLfdse73gcGl+UQAIMhcT2t2BUY91VsOaQC+85TpAiJAspfyV6FlCXt+D5fiMKWm4XoPZ/Cy2eYP+5BicE5x09AtOBqupbodEDkDx6JfH8hLMmNlhcKC2phv6b+i8tiKIDQRqfDly5L0+LxD3tILpBHID0XAqUV2+Tn9pIlhhSOS+mgY3VbqrLGTHVZg4Xv5qEJbLNaMVVtykOC2VIOizvCRvY8RCtXCtLYw9i1U9FjY5aGOS0Bm6g+LrpYbGnkFyGPsn0K0Jpx6ER1Ku+ZPHl4LobHphrpnwXGZXXV2TUkwNZAA8Topwg3JGk6R7CljHimWZ3ZYjLmMRyjkm4RzbLnnB1Q02H/kOawMxpBjiLFcfn+O3NDYpqj7FhXNhvQItpVGik7hb1XzvDe01YQA6wgXANloxW3qj6ZDnW8ABxWj4z9GM8qOxVLTfxXLLAHW09YWrYVRj2Oc8TBAFytftBWDGZaFJj6ZZmNznD4IzCeIHddGLA0kQlNNsLYgGV/8j/tC04tzBT3ssZxOaLsh2bUGeFhdeIw2LJ53B0PVPAcQO664REkwca0AOMwMwvpZZq72ugAiAw/O110sXQlj5aXQQco43A5eP0WfDYAlw/pmCDadASLaKvskc2ROkHhcHQBIc+JJuHES6BA5AIv0YklpkEDiSLDx6rc/ByP+T+4eQ8F28FsnO0w0tMtHhlIEnqFOWZL7LY4NnlnYUAnq0LdRoydJEcZ5eBXbbsaarhBDS4XOsLpj2fYHSC7Tw+y5f5KfX7tnR8TPLvw3wiANNP8AKe6o8sLC85Z0J4Lr1sAQRbRYsVhHAHhy19AufJ5Gm0NGBmbhwQBC62zMGM7T+aLPsym7PcSCINibHlbX7LoVKwpOaDoNTFyeJuFJOUt2OkkdFuHgkrk7doj3T54tIT27Zpybn5FYNo7SpOGUuMOMG0Q2RN+iSXs4aKWrPG4vCAAALi1cES4kRovc+0wIp7tNhpgDK9pktBN58CV5Ki6SeklDxb+ZCT1EMUaYwhDsmaKk6E553ba6dl47EQNTC9Fiy2Dc6H9o+683j4iwLteGnyK9bLdohj+zkVd4nh9kVGjTgkkSNJMf/UuRylCCP9BRx9jyEvbGiz1AtNQrNUKz7ChKipRAYjSntcsrSmtKdIDNrX2TqLCeBWIOt2W2lXgLo9E+yLbQ4GFt2XiIcDOjmn6ri1cSSV1tggGSbkER9UcGNSypIXK6hbPc4jGZae8QJaCN4XHYryjsZLiZ4nzTNoY7+m5rqcWgGx46iy4lN5VPNwpzRLx21FnpqGLuOoXdxm0G/phBGcwHc4Zpwtr3gLxTaxDhpw4jn1W4YklhB/LowwqmCb2jq0tr1WMOV7myRMGJWw+0RLS4Nh7hlmZ3QOHLXReew1Sy34duYMFrmL6XjVNjw0gTkrOpsKpneGExLSAZ0dNo59Oq6FfFw7d+GTF5twuVwK7TTqROgkEW4T2Wlr/6THakkzGjbgQ68+KywdivJdM79THkZhOpA8lpGKcC14cTuyQBe0aLkUKHvQ+XRDm+MyP8LtUdmiBvn4Tw8AozwoR5FVWJPtG9oM3h0axay6uzvavecCRGS38iBxI+i8vtKvlL26w8jTlC5tXFunQ/CPIKM/HT+jox5HrZ9Go+0JDzmNpErpu9pqcwM3yH3XzJ2NBJ6tJ8fBaaWOh2vDXsuNeJXX7s6PmZ6/F7bdOuv3SMVtN5aIk9L3krzVXaPw34BYMXj/NJPw16vQI5XZ607SeNZG82JtpM+i4eN289z3Eu1cdNFjp173OhGnK33XMxNZuZ2hvyTvxKS0D5U3R29lbUc4uumVdo5XNcS1wDpLTmgjkbLibABqVCG2EOl0WG6Vm2o9zHZXWue4nVPj8VfH0B5OdHe2t7QtNL3dFrWZpLwCTx/aTrYD8uvOUdpw5w13efiFg97mdExuu8isdF8uN+EfVLh8dLKtDylxOrUxuYHguSa10ZMA7w08fsuU+rfVdeeFUJjd2BWkGRp5JbcVrZFTMmEINylhHdlGxL6kpLytIOvVZ8Qs4hTEyohlRTocEJgKWEYVEKzS0bvZLlG07vZKlXl9E0W0robOrPbJYY5+PzXNC1YRzrwYWw6kmgZFcTtuxDnMOfkZHDqsLH7v5ySa1Ym3LzVMfurrnP2ZCMaRtbdw7ea6gon3b3SDHDjBdqFx6DxIsdRx8ei6lHFBrSTxntr4TyVsUVTJZW/oKmctpB59eS20qm63v6LiU683+3ouvQxO40ch5wmxpPoTLo04muCW/xR/qYYGiONwBJA4E8Vx69feb/ABHqj9/Yd0b7BWkelwmNy+8HNzT9CvRYHHSxpP8Aod9IXzbH4ohxgkXGhjguhh8c8AQ9w3TxPh4pGk9EsmNuKaNe3sdFWoP+4T5KV9qvEAPc0e7p2aSB8DZsPGSuBtGvLzJm/wBkzG1t7+yn/wCtqi47Z0x0kjrf8Xqyf6j+H73fdXX2q5xaXGTBbJ1IGknjqvPNxFz2TMRWuzoVNw0UO9VxfwX4NWLFYvzS6YLjTtbdk+E3Sdq0Y+DSbybzJVJYG4t0JCa9qPY4LFgsDs28zdad22YCJl14vExquTjMM3O7eOo5cguQMblBkmMwJA5gCFMVtdpc4iYMcByHineOFbJRUlK0dPYG0mML6TnFuozCxvaZ4FY9uS1wmpmBzAEzMA6H5rnbK2gA90gFtz4i6TtPFl5k83R4CQkUI/CVp/LYqvWvrNlWDq3PRY6jpQMfErkUfWdnU9xo6lWpY9FyH1Ebq55rK5yOeSlRscaHU6kH7Ig+SSszSjpu1SQHkiPqEEpL3kqPNygKnIaKKUVKJBywiCAIgmQGaB8KWiBsgKtJk0UFrwR17LGCtOD4rYXzQJriG83KsOsl1DcqA2Vb2LWjXSdcdQtVR+4fzisFM3HVaartw/nFdGOXFkZx2iqD7LqUKm6OgXOwJ3e61YW8Dmr4FpfkllF4irvN/iPVH7yw7pW0IDmwI3RznilZ7DulepNBSuKH7Qq7x6+i20ath/E+QXJxz97j+BbKT7cfhK0NzYJR4oVjqm93TK2IvcA7oE30AEaFY8a7e7q6rr8dApuVNlFHSGitc2HDn91MRXlw0sABHRZs1zrwUqu3hroPJI5aGUdnqhVhtINI+Fsa631XEx2JqCQ7n9+Snv3syWMQ0idOyrEVcwkg66fNd02pRpaZzQh6sLEP3T1HkFlY0kSOeiZjDGYCfiQYZ1uOq55JOdMstR0LwT94q8S/zKThXbzu/mpiH9dSop/8x2uYBddLzXKKmJKB5uVBrVlS3AxKzytf7OOhWKVPLSoaATSjppTU2mUsBpC3m6Ao36oCkl2MilStRKMRWEMqwsAeDZAUQNkslUkxUilowx1WZPwx1WxPkjT6CedVAbIHnVTgnb2LQ+mbjqn1Dun84rIx1wpUeqRnUWI42zbhHbvdXh6pnVYqdQxCbh3X7KkMn9ULKHYyviC5wmLCNOSLNYd1kLrpuew7oKbbbZnGhuMdc/nBaqTrf2nyWDFuutFN9uxVYT5sSUeKF4t293UqOv2HklYl293UqOv2HkpOW2OlpBTc9lKh3h0Hkl5teyj3XHZL7aGo6/6wEsER8I+qy46vBtz17rPVdp0CzOer5fJlVMnDErs31ngtMcwl0aoAgpYdu90qVOWRppjKGqDo1AHGfFFWPqszTdMc6w7qUZv1odx3ZU3VF0lDKocVP2GofO72WRaZ3eyyoZX0GCCanUmkrPKfh6sJcbV7DJa0LqalAU6qZkpKE1TDEpRSVEljECsKgjYijMc2nZIJTDUMQkSqZJLVCxTLlOoHVITaJ1SQewyWgnHVVNkLnKSjewUMabqPKFpuo8pr0CthMNkyg66Q0plJyMJbQJIouumh+ndILro82iMZGaDxD7p9N9uxWOs66cx3kVSE+TFlHRVd11Huv2CVWddW53kpuW2Ggs3oo910vMo510PYah9Wpp0SMyuq7RLlCcrZox0ac+73QZlWayDMmlLoCRGuumE2HdJa5GTYJIvQWiSqlVmVByFhodO6s8p2ayQtN9Gii5R0ilyjplLF7GfQbilEpjtEpGQIkUUUSjERMUURXYGGUlWotM0SkykoohHsz6KcUMqKLNhQbSqcVFEfoBAUVMqKLRAwZuilRRZMzKqFMa7yVqJk+QGtCqhuoSoolsYqVHG6iiBi6h0QSoohLsyWg81lUqlEbMQFFNlFFkZgqSqUWMM4JStRaRkUjpqKIR7M+g3aJSiieQIlqlFEox//2Q==");
+            background-repeat:no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+         }
+        
+        .display {
+            height: 480px;
+            width: 100%;
+            max-width: 500px;
+            padding: 1rem;
+            background-color: aliceblue;
+            margin-top: 70px;
+            border: 0;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .sign {
+            background-color: blue;
+            color: black;
+            width: 100%;
+            height: 28px;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 600px;
+        }
+
+        select {
+            width: 100%;
+            height: 30px;
+            border: 0;
+            border-radius: 5px;
+
+        }
+
+        .Convert {
+            background-color: blue;
+            width: 100%;
+            height: 30px;
+            border: 0;
+            border-radius: 5px;
+            margin-top: 130px;
+            /* margin-left: 25px; */
+
+        }
+
+        .converted {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            height: 25px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+        <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+
+    <div class="display">
+        <h3>CURRENCY CONVERTER</h3>
+        <p class="Amount">Amount <br><input type="number" id="amount"></p>
+        <p>From:</p>
+        <select id="from">
+        </select>
+        <p>To:</p>
+        <select id="to">   
+        </select>
+
+        <button class="Convert" id="convert">Convert</button>
+        <p class="converted" id="converted"></p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+
+    let spinner = document.querySelector(".spinner-grow");
+    let display = document.querySelector(".display");
+    let selects = document.querySelectorAll("select");
+    let convertBtn = document.getElementById("convert")
+    let fromselect = document.getElementById("from")
+    let toselect = document.getElementById("to")
+    let amount = document.getElementById("amount")
+    let rates;
+
+    const currencyConverter = async () => {
+        console.log("Fetching data from API...");
+        fetch("https://openexchangerates.org/api/latest.json?app_id=ed6510543b464013a0171c680580aefd")
+            .then((response) => {
+
+                if (!response.ok) {
+                    throw new Error("Error fetching data: " + response.status); 
+                }
+                return response.json();
+            })
+            .then((currencyCon) => {
+
+                console.log("Parsed response:", currencyCon);
+                rates = currencyCon.rates;
+
+                selects.forEach((select) => {
+                    select.innerHTML += "<option disabled selected value='disabled'>Select Currency</option>"
+                    Object.keys(rates).map((rate) => {
+                        select.innerHTML += `
+                        <option value="${rate}">${rate}</option> 
+                        `
+                    })
+                })
+
+                // console.log("USD to EUR:", currencyCon.rates["EUR"]);
+            })
+            .catch((error) => {
+                console.error("Fetch error:", error);
+                
+            })
+            .finally(() => {
+                spinner.style.display = "none";
+                display.style.display = "block";
+            });
+    };
+
+    
+    convertBtn.addEventListener('click', () => {
+        console.log(toselect.value, rates[toselect.value]);
+        console.log(fromselect.value, rates[fromselect.value]);
+        console.log(amount.value);
+         
+
+        const end = Number(amount.value) / rates[fromselect.value] * rates[toselect.value];
+        console.log(end);
+         converted.innerHTML += `${Number(amount.value) / rates[fromselect.value] * rates[toselect.value]}`
+        
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        currencyConverter();
+    });
+</script>
+
+
+
+</html>
